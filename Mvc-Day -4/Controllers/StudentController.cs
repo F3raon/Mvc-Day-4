@@ -27,14 +27,13 @@ namespace Mvc_Day__4.Controllers
             }
             return View(student);
         }
-        /*------------------------------------------------------------------*/
         [HttpGet]
         public IActionResult Create()
         {
             ViewBag._Departments = new SelectList(db.Departments, "DeptId", "DeptName");
             return View();
         }
-        /*------------------------------------------------------------------*/
+        
         [HttpPost]
         public IActionResult Create(Student student)
         {

@@ -12,7 +12,6 @@ namespace Mvc_Day__4.Models
 
         [DisplayName("Department Name")]
         public string DeptName { get; set; }
-        
         public virtual ICollection<Student> Students { get; set; } = new HashSet<Student>();
 
     }
